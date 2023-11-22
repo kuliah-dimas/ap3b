@@ -14,7 +14,8 @@ func main() {
 	fmt.Println("============== Menu pILIHAN============")
 	fmt.Println("1. Biodata Nilai")
 	fmt.Println("2. Pola bangun datar")
-	fmt.Println("Maukkan Pilihan [1-2]: ")
+	fmt.Println("3. FizzBuzz")
+	fmt.Println("Maukkan Pilihan [1-3]: ")
 	fmt.Scan(&pil)
 
 	switch pil {
@@ -66,7 +67,24 @@ func main() {
 			}
 			fmt.Println("")
 		}
+	case 3:
+		var n int
+
+		fmt.Print("Masukkan n: ")
+		fmt.Scan(&n)
+
+		for i := 1; i <= n; i++ {
+			if i%5 == 0 && i%3 == 0 {
+				fmt.Println("FizzBuzz")
+			} else if i%3 == 0 {
+				fmt.Println("Fizz")
+			} else if i%5 == 0 {
+				fmt.Println("Buzz")
+			} else {
+				fmt.Println(i)
+			}
+		}
 	default:
-		fmt.Println("Pilihan tidak adas")
+		fmt.Println("Pilihan tidak ada")
 	}
 }

@@ -30,7 +30,6 @@ func main() {
 	fmt.Println("\nData Mahasiswa:")
 	for i := 0; i < len(mahasiswas); i++ {
 		mahasiswaPtr := &mahasiswas[i]
-		fmt.Print(&mahasiswaPtr)
 		fmt.Printf("Nama: %s\n", mahasiswaPtr.Nama)
 		fmt.Printf("NIM: %s\n", mahasiswaPtr.NIM)
 		fmt.Printf("Jurusan: %s\n", mahasiswaPtr.Jurusan)
